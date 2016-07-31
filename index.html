@@ -35,23 +35,19 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <p>A year ago, Benjamin Herrenschmidt pushed a QEMU tree on github :</p>
+        <p>A year ago, Benjamin Herrenschmidt pushed a QEMU tree on github </p>
 
-<pre><code> https://github.com/ozbenh/qemu/
-</code></pre>
+<p><a href="https://github.com/ozbenh/qemu/">https://github.com/ozbenh/qemu/</a></p>
 
 <p>adding a new PowerPC platform. PowerNV (as Non-Virtualized) is the
 "baremetal" platform using the OPAL firmware. It runs Linux on IBM and
 Open Power systems and it can be used as an hypervisor OS, running KVM
 guests, or simply as a host OS.</p>
 
-<p>The QEMU tree Benjamin has pushed is mostly used to test 'skiboot', a
-component of OPAL, as a part of a regression testsuite. It is also
-quite useful for distro development, especially when you can't access
-real hardware to test your code on the host.</p>
+<p>The QEMU tree Benjamin has pushed is mostly used to test  <a href="http://github.com/open-power/skiboot">skiboot</a>, a
+component of OPAL, as a part of a regression testsuite. It is also quite useful for distro development, especially when you can't access real hardware to test your code on the host.</p>
 
-<p>Below is a port of this work on a recent version of QEMU adding a
-couple of new features such as IPMI.</p>
+<p>Below is a port of this work on a recent version of QEMU adding a couple of new features such as IPMI.</p>
 
 <ul>
 <li>
@@ -91,6 +87,8 @@ qemu-system-ppc64 -m 2G -machine powernv,accel=tcg -cpu POWER8 \
     -bios ./skiboot.lid \
     -nographic -nodefaults
 </code></pre>
+
+<p>The files <a href="http://www.kaod.org/openpower/qemu/palmetto-SDR.bin">palmetto-SDR.bin</a> and <a href="http://www.kaod.org/openpower/qemu/palmetto-FRU.bin">palmetto-FRU.bin</a> define a Sensor Data Record repository and a Field  Replaceable  Unit inventory for the BMC simulator used in qemu.</p>
 
 <p>NOTE about using virtio:</p>
 
