@@ -14,15 +14,9 @@ Below is a port of this work on a recent version of QEMU adding a couple of new 
 
 * to clone the updated QEMU tree and compile :
 
-    https://github.com/legoater/qemu/tree/powernv-ipmi-2.7	(stable branch on 2.7)
+    https://github.com/legoater/qemu/tree/powernv-ipmi-2.8	(stable branch on 2.8)
 
-    https://github.com/legoater/qemu/tree/powernv-ipmi-2.8	(wip branch)
-
-* for IPMI support, you will need a recent skiboot for the QEMU platform. You can find it here :
-
-    https://github.com/open-power/skiboot/
-
-  or just download this custom 5.3.0 [skiboot.lid](http://www.kaod.org/openpower/qemu/skiboot.lid) file.
+    https://github.com/legoater/qemu/tree/powernv-ipmi-2.9	(wip branch)
 
 * to boot, get a skiroot kernel and rootfs. You can find them on the OpenPOWER build site :
 
